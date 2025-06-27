@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco's Auto Clinic - Reliable Car Repairs in Windhoek</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-700 text-white shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <div class="bg-white rounded-full w-12 h-12 flex items-center justify-center text-blue-700 font-bold text-xl">M</div>
+        <div>
+          <h1 class="text-2xl font-bold">Marco's Auto Clinic</h1>
+          <p class="text-sm italic">“Keeping Windhoek Moving”</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="text-sm">Call us: <a href="tel:+264612479" class="underline hover:text-gray-300">+264 61 2479</a></p>
+        <p class="text-sm">Windhoek, Khomas Region, Namibia</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white shadow-inner p-8 text-center max-w-4xl mx-auto mt-6 rounded-md">
+    <h2 class="text-3xl font-semibold mb-4">Trusted Auto Repairs & Maintenance</h2>
+    <p class="mb-6 text-gray-600">Expert car repair services for all makes and models. Reliable, affordable, and close to you in Windhoek.</p>
+    <a href="#booking" class="bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition">Request a Quote or Book Service</a>
+  </section>
+
+  <!-- Services -->
+  <section class="max-w-6xl mx-auto mt-12 px-6">
+    <h3 class="text-2xl font-bold mb-6 border-b border-blue-700 pb-2 max-w-max">Our Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Engine Diagnostics & Repair</h4>
+        <p>We diagnose and fix engine problems quickly and efficiently to keep your vehicle running smoothly.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Oil Change & Filter Replacement</h4>
+        <p>Regular oil changes to protect your engine and improve performance.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Brake Repair & Maintenance</h4>
+        <p>Ensure your safety with professional brake inspections, repairs, and replacements.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Tire Services & Wheel Alignment</h4>
+        <p>Tire rotation, balancing, and alignment to extend tire life and improve driving comfort.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Battery Testing & Replacement</h4>
+        <p>Keep your car starting reliably with battery checks and replacements.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="font-semibold mb-2">Suspension & Steering Repair</h4>
+        <p>We fix suspension and steering issues to keep your ride smooth and safe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white max-w-4xl mx-auto mt-16 p-8 rounded-md shadow">
+    <h3 class="text-2xl font-bold mb-6 border-b border-blue-700 pb-2 max-w-max">What Our Customers Say</h3>
+    <div class="space-y-6 text-gray-700">
+      <blockquote class="border-l-4 border-blue-700 pl-4 italic">
+        “Marco's Auto Clinic fixed my car quickly and at a fair price. Friendly and professional service!” – Sarah N.
+      </blockquote>
+      <blockquote class="border-l-4 border-blue-700 pl-4 italic">
+        “Reliable and honest mechanics. I trust them with all my vehicle maintenance.” – Johannes K.
+      </blockquote>
+      <blockquote class="border-l-4 border-blue-700 pl-4 italic">
+        “Great service and quick turnaround. Highly recommend for any car repairs in Windhoek.” – Maria T.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Booking / Contact Form -->
+  <section id="booking" class="max-w-3xl mx-auto mt-16 bg-white rounded-md shadow p-8">
+    <h3 class="text-2xl font-bold mb-6 border-b border-blue-700 pb-2 max-w-max">Request a Quote or Book Service</h3>
+    <form action="mailto:contact@marcosautoclinic.com" method="POST" enctype="text/plain" class="space-y-6">
+      <div>
+        <label for="name" class="block font-semibold mb-1">Full Name</label>
+        <input type="text" id="name" name="Name" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-700" />
+      </div>
+      <div>
+        <label for="phone" class="block font-semibold mb-1">Phone Number</label>
+        <input type="tel" id="phone" name="Phone" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-700" />
+      </div>
+      <div>
+        <label for="service" class="block font-semibold mb-1">Service Needed</label>
+        <select id="service" name="Service" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-700">
+          <option value="">Select a service</option>
+          <option>Engine Diagnostics & Repair</option>
+          <option>Oil Change & Filter Replacement</option>
+          <option>Brake Repair & Maintenance</option>
+          <option>Tire Services & Wheel Alignment</option>
+          <option>Battery Testing & Replacement</option>
+          <option>Suspension & Steering Repair</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="message" class="block font-semibold mb-1">Additional Details</label>
+        <textarea id="message" name="Message" rows="4" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-700" placeholder="Describe your issue or request here..."></textarea>
+      </div>
+      <button type="submit" class="bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white mt-20 py-6 text-center">
+    <p>© 2025 Marco's Auto Clinic — Windhoek, Namibia</p>
+    <p>Phone: <a href="tel:+264612479" class="underline hover:text-gray-300">+264 61 2479</a></p>
+  </footer>
+
+</body>
+</html>
